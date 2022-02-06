@@ -20,11 +20,11 @@ go test -v ./ -timeout 30m -folder 'b1gi9bocbje5b41uqkje' -ssh-key-pass '/home/y
 go test -v ./ -timeout 30m -folder 'b1gi9bocbje5b41uqkje' -ssh-key-pass '/home/yubazh/.ssh/id_rsa' > /home/yubazh/test.log
 14) Запушил все изменения в свой гитхаб и дополнил README.md в новой ветке
 
-upd
-15) Во время выполнения homework #4, узнал что можно обращаться к мастер хосту через cluster id в формате: c-<cluster ID>.rw.mdb.yandexcloud.net
-16) Поэтому, добавил в output.tf вывод yandex_mdb_mysql_cluster.wp_mysql.id в database_id.
-17) Закоментил проверку соединения с БД и добавил новый подобный блок проверки соединения с БД, в котором считывается database_id. 
-18) Формируется hostname используя этот database_id (dbFqdn := ("c-" + databaseId + ".rw.mdb.yandexcloud.net")
-19) Использование сертификата не менял
-20) Также откорректировал строчку вывода успешного ping, и теперь вывод будет такй: Successfully pinged the DB with forced SSL
-21) Еще раз прогнал полный цикл создания ресурсов, проведения тестов и дестрой ресурсов и выгрузил в лог. Лог приложил
+upd  
+15) Во время выполнения homework #4, узнал что можно обращаться к мастер хосту через cluster id в формате: c-<cluster ID>.rw.mdb.yandexcloud.net  
+16) Поэтому, добавил в output.tf вывод yandex_mdb_mysql_cluster.wp_mysql.id в database_id.  
+17) Закоментил проверку соединения с БД и добавил новый подобный блок проверки соединения с БД, в котором считывается database_id.   
+18) Формируется hostname используя этот database_id (dbFqdn := ("c-" + databaseId + ".rw.mdb.yandexcloud.net")  
+19) Использование сертификата не менял  
+20) Также откорректировал строчку вывода успешного ping, и теперь вывод будет такй: Successfully pinged the DB with forced SSL  
+21) Еще раз прогнал полный цикл создания ресурсов, проведения тестов и дестрой ресурсов и выгрузил в лог. Лог приложил  
