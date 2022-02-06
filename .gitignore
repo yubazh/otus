@@ -4,10 +4,14 @@
 ### Terraform ###
 # Local .terraform directories
 **/.terraform/*
+**/.mysql/*
+.mysql/
 
 # .tfstate files
 *.tfstate
 *.tfstate.*
+*.crt
+./terraform/test/root.crt
 
 # Crash log files
 crash.log
