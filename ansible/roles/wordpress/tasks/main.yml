@@ -36,7 +36,7 @@
 
 - name: Copy file with owner and permissions
   template:
-    src: wordpress.conf.j2
+    src: ../templates/wordpress.conf.j2
     dest: /etc/apache2/sites-available/wordpress.conf
 
 - name: Enable URL rewriting
@@ -65,6 +65,6 @@
 
 - name: Configure WordPress
   template:
-    src: wp-config.php.j2
+    src: ../templates/wp-config.php.j2
     dest: "/srv/www/wordpress/wp-config.php"
     owner: "www-data"
